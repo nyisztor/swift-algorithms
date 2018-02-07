@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Pair Without Generics'/>
+        <page name='Generic Types'/>
+        <page name='isEqual() Without Generics'/>
+        <page name='Generic Functions'/>
+    </pages>
+</playground>
