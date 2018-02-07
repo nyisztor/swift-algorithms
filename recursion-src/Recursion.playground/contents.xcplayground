@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
+    <pages>
+        <page name='Node'/>
+        <page name='Factorial'/>
+        <page name='Factorial with BigInt'/>
+        <page name='Infinite Recursion'/>
+    </pages>
+</playground>
