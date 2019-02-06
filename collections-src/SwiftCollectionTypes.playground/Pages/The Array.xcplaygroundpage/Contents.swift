@@ -52,6 +52,11 @@ numbers.forEach { value in
     }
 }
 
+//Short option to print every element and their corresponding index.
+for (index, value) in numbers.enumerated() {
+    print("Index of \(value) is \(index)")
+}
+
 //: - Callout(Accessing the Array):
 //: Access by index and using first and last accessors
 let second = numbers[1] // dangerous, we haven't checked whether the index is valid!
