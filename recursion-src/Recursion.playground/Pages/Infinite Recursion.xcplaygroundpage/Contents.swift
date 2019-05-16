@@ -6,7 +6,7 @@
 //:
 //: _ _ _
 //: ## Recursive Functions
-//: How to avoid infinite recursion?
+//: Infinite recursion example
 //:
 //: - Callout(Interested in Swift programming?):
 //: Check out my **[Youtube channel](https://www.youtube.com/c/swiftprogrammingtutorials)**
