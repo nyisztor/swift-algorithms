@@ -1,4 +1,4 @@
-//: **Introduction to Algorithms and Data Structures in Swift 4** - Source Code
+//: **Introduction to Algorithms and Data Structures in Swift 5** - Source Code
 //:
 //: Get the course **[on Udemy using this discounted coupon](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 //:
@@ -31,6 +31,9 @@ func qsort(_ input: [Int]) -> [Int] {
     return qsort(less) + equal + qsort(greater)
 }
 //: Test
-let numbers = [0, 9, 6, 2, 3, 2, 1, 3]
-let qsorted = qsort(numbers)
-print(qsorted)
+let array = Array.generateRandom(size: 20)
+print("The unsorted array:\n\(array)")
+let sorted = qsort(array)
+
+print("Sorted with quick sort:\n\(sorted)")
+//: [Previous: Merge Sort](@previous)

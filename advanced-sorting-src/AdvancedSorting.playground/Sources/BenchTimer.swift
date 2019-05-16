@@ -1,13 +1,13 @@
 import Foundation
+
+//: Utility class used for performance measurements
 import QuartzCore
 
 public class BenchTimer {
-    // returns dt time in seconds
-    @inline(never)
-    public static func measureBlock(closure:() -> Void) -> CFTimeInterval {
-        let runCount = 1
-        var executionTimes = Array<Double>(repeating: 0.0, count: runCount)
-        // average 10 runs
+    // @inline(__always) optimizes for speed by telling the compiler to always inline the method, if possible
+    @inline(__always) public static func measureBlock(closure:() -> Void) -> CFTimeInterval {
+        let runCount = 10
+        var executionTimes = Array<Double>()//Array<Double>(repeating: 0.0, count: runCount)
         for i in 0..<runCount {
             let startTime = CACurrentMediaTime()
             closure()
@@ -15,13 +15,16 @@ public class BenchTimer {
             let execTime = endTime - startTime
             executionTimes[i] = execTime
         }
-        // sum(elements)/10
         return (executionTimes.reduce(0, +)) / Double(runCount)
     }
 }
 
+/*
+ Displays formatted time
+ This property provides a concise string representation of the time interval value which also includes the right unit of time, which ranges from ns to s.
+ */
 public extension CFTimeInterval {
-    public var formattedTime: String {
+    var formattedTime: String {
         return self >= 1000 ? String(Int(self)) + "s"
             : self >= 1 ? String(format: "%.3gs", self)
             : self >= 1e-3 ? String(format: "%.3gms", self * 1e3)

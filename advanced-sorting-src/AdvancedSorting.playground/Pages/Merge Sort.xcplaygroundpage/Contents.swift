@@ -1,4 +1,4 @@
-//: **Introduction to Algorithms and Data Structures in Swift 4** - Source Code
+//: **Introduction to Algorithms and Data Structures in Swift 5** - Source Code
 //:
 //: Get the course **[on Udemy using this discounted coupon](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 //:
@@ -58,8 +58,9 @@ func merge(leftPart: [Int], rightPart: [Int]) -> [Int] {
     return sorted
 }
 //: Test
-let unsorted = [0, 9, 6, 2, 3, 2, 1, 3]
-print("Unsorted \(unsorted)")
-let sorted = mergeSort(unsorted)
+let array = Array.generateRandom(size: 20)
+print("The unsorted array:\n\(array)")
+let sorted = mergeSort(array)
 
-print("Sorted with merge sort \(sorted)")
+print("Sorted with merge sort:\n\(sorted)")
+//: [Next: Quick Sort](@next)
