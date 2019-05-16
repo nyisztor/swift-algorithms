@@ -14,14 +14,13 @@ public class BenchTimer {
             let endTime = CACurrentMediaTime()
             let execTime = endTime - startTime
             executionTimes[i] = execTime
-        }
-        // sum(elements)/10
+        }        
         return (executionTimes.reduce(0, +)) / Double(runCount)
     }
 }
 
 public extension CFTimeInterval {
-    public var formattedTime: String {
+    var formattedTime: String {
         return self >= 1000 ? String(Int(self)) + "s"
             : self >= 1 ? String(format: "%.3gs", self)
             : self >= 1e-3 ? String(format: "%.3gms", self * 1e3)

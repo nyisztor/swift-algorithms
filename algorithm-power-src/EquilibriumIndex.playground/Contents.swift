@@ -1,4 +1,4 @@
-//: **Introduction to Algorithms and Data Structures in Swift 4** - Source Code
+//: **Introduction to Algorithms and Data Structures in Swift 5** - Source Code
 //:
 //: Get the course **[on Udemy using this discounted coupon](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 //:
@@ -14,16 +14,6 @@
 //: Website **[www.leakka.com](http://www.leakka.com)**
 //: ---
 import Foundation
-
-func generateArray(size: Int, min: Int, max: Int) -> [Int] {
-    var result = [Int](repeating: 0, count:size)
-    
-    for i in 0..<size {
-        result[i] = min + Int(arc4random_uniform(UInt32(max - min + 1)))
-    }
-    
-    return result
-}
 
 //: - Callout(First Attempt):
 //: O(n^2)
@@ -84,7 +74,7 @@ func equilibriumOptimized(_ numbers: [Int]) -> [Int]? {
 let size = 200
 let maxValue = 10
 
-let array = generateArray(size: size, min: -maxValue, max: maxValue)
+let array = Array.generateRandom(size: size, min: -maxValue, max: maxValue)
 
 
 if let result = equilibrium(array) {

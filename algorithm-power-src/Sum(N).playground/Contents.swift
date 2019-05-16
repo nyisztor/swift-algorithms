@@ -1,4 +1,4 @@
-//: **Introduction to Algorithms and Data Structures in Swift 4** - Source Code
+//: **Introduction to Algorithms and Data Structures in Swift 5** - Source Code
 //:
 //: Get the course **[on Udemy using this discounted coupon](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 //:
@@ -55,5 +55,5 @@ for i in 1...10 {
     sumOptimizedTime = BenchTimer.measureBlock {
         _ = sumOptimized(UInt(i*step))
     }
-    print("- \(i*step) elements: \n\t sum(n) \t\t \(sumTime.formattedTime) \n\t sumOptimized(n) \t \(sumOptimizedTime.formattedTime)")
+    print("- \(i*step) elements: \n\t sum(n) \t\t\t \(sumTime.formattedTime) \n\t sumOptimized(n) \t \(sumOptimizedTime.formattedTime)")
 }

@@ -1,4 +1,4 @@
-//: **Introduction to Algorithms and Data Structures in Swift 4** - Source Code
+//: **Introduction to Algorithms and Data Structures in Swift 5** - Source Code
 //:
 //: Get the course **[on Udemy using this discounted coupon](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 //:
@@ -20,17 +20,6 @@
 //: Website **[www.leakka.com](http://www.leakka.com)**
 //: ---
 import Foundation
-
-func generateArray(size: Int, maxValue: Int) -> [Int] {
-    var result = [Int](repeating: 0, count:size)
-    
-    for i in 0..<size {
-        result[i] = Int(arc4random_uniform(UInt32(maxValue)))
-    }
-    
-    return result
-}
-
 //: - Callout(TwoSum):
 //: O(n^2) running time
 func findTwoSum(_ array: [Int], target: Int) -> (Int, Int)? {
@@ -50,12 +39,14 @@ func findTwoSum(_ array: [Int], target: Int) -> (Int, Int)? {
     return nil
 }
 
+// Example usage:
+/*
 let array = [0,2,2,3,4]
 if let indices = findTwoSum(array, target: 4) {
     print(indices)
 } else {
     print("No pairs found")
-}
+}*/
 
 //: - Callout(TwoSum Optimized):
 //: O(n) running time
@@ -81,22 +72,21 @@ func findTwoSumOptimized(_ array: [Int], target: Int) -> (Int, Int)? {
     
     return nil
 }
-
 //: Performance tests
 let size = 5000
 let target = 100
 let maxValue = 60
 
-let numbers = generateArray(size: size, maxValue: maxValue)
-
+let numbers = Array.generateRandom(size: size, maxValue: maxValue)
+var indices: (Int, Int)?
 var execTime = BenchTimer.measureBlock {
-    _ = findTwoSum(numbers, target: target)
+    indices = findTwoSum(numbers, target: target)
 }
-
 print("Average findTwoSum execution time for \(size) elements: \(execTime.formattedTime)")
 
 execTime = BenchTimer.measureBlock {
-    _ = findTwoSumOptimized(numbers, target: target)
+    indices = findTwoSumOptimized(numbers, target: target)
 }
-
 print("Average findTwoSumOptimized execution time for \(size) elements: \(execTime.formattedTime)")
+
+print(indices ?? "No indices found")
