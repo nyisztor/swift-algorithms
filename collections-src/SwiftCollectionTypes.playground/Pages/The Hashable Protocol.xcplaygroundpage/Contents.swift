@@ -1,4 +1,4 @@
-//: **Introduction to Algorithms and Data Structures in Swift 4** - Source Code
+//: **Introduction to Algorithms and Data Structures in Swift 5** - Source Code
 //:
 //: Get the course **[on Udemy using this discounted coupon](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 //:
@@ -17,8 +17,10 @@
 struct SimpleStruct: Hashable {
     var identifier: String
     
-    public var hashValue: Int {
-        return identifier.hashValue
+    // `hashValue` is deprecated as a `Hashable` requirement. To conform to `Hashable`, implement the `hash(into:)` requirement instead.
+    // Hasher was introduced in Swift 4.2 and it provides a randomly seeded, universal hash function
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
     }
     
     public static func == (lhs: SimpleStruct, rhs: SimpleStruct) -> Bool {

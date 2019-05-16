@@ -1,4 +1,4 @@
-//: **Introduction to Algorithms and Data Structures in Swift 4** - Source Code
+//: **Introduction to Algorithms and Data Structures in Swift 5** - Source Code
 //:
 //: Get the course **[on Udemy using this discounted coupon](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 //:
@@ -41,13 +41,13 @@ print(numbers)
 //: - Callout(Array Indices):
 //: We can iterate through the array and print the indices using the Array index(of:) and forEach(_:) instance methods
 for value in numbers {
-    if let index = numbers.index(of: value) {
+    if let index = numbers.firstIndex(of: value) {
         print("Index of \(value) is \(index)")
     }
 }
 
 numbers.forEach { value in
-    if let index = numbers.index(of: value) {
+    if let index = numbers.firstIndex(of: value) {
         print("Index of \(value) is \(index)")
     }
 }
@@ -76,13 +76,6 @@ if index >= 0,
 if numbers.indices.contains(index) {
     let t = numbers[index]
     print(t)
-}
-
-// Array extension for index bounds check
-extension Array {
-    subscript (safe index: Index) -> Element? {
-        return indices.contains(index) ? self[index] : nil
-    }
 }
 
 let t = emptyArray[safe: index]

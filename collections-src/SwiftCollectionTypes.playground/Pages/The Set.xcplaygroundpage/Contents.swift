@@ -1,4 +1,4 @@
-//: **Introduction to Algorithms and Data Structures in Swift 4** - Source Code
+//: **Introduction to Algorithms and Data Structures in Swift 5** - Source Code
 //:
 //: Get the course **[on Udemy using this discounted coupon](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 //:
@@ -52,10 +52,8 @@ print(numbersArray)
 let numbersSet: Set = [1, 2, 3, 4, 5]
 print(numbersSet)
 // Output: undefined order, e.g. [5, 2, 3, 1, 4]
-
 //: - Callout(Traversing the Set):
 //: We can iterate over the values in a set
-
 // for-in loop
 for value in numbersSet {
     print(value)
@@ -73,7 +71,6 @@ numbers.forEach { value in
     print(value)
 }
 // Output: undefined order, e.g. 5, 2, 3, 1, 4
-
 //: - Callout(Accessing & Modifying the Set):
 //: Accessing and modifying the contents of a Set
 var mutableStringSet: Set = ["One", "Two", "Three"]
@@ -125,7 +122,6 @@ var numbersSet2: Set = [1, 2, 5, 3, 1, 2]
 numbersSet2.removeAll(keepingCapacity: true)
 print("count: \(numbersSet2.count) capacity: \(numbersSet2.capacity)")
 // count: 0 capacity: 6
-
 //: - Callout(Set Operations):
 //: The Set exposes useful methods that let us perform fundamental operations.
 let primes: Set = [3, 5, 7, 11]
@@ -150,7 +146,6 @@ print(subtract.sorted())
 let symmetricDiff = primes.symmetricDifference(odds)
 print(symmetricDiff.sorted())
 // Output: [1, 11]
-
 //: - Callout(Membership and Equality):
 //: Other useful Set methods
 // ==
