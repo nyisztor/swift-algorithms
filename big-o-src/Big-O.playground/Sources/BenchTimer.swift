@@ -3,19 +3,17 @@ import Foundation
 //: Utility class used for performance measurements
 import QuartzCore
 
-import XCTest
-public class BenchTimer: XCTestCase {
+public final class BenchTimer {
     // @inline(__always) optimizes for speed by telling the compiler to always inline the method, if possible
-    @inline(__always) public static func measureBlock(closure: () -> Void) -> CFTimeInterval {
-        let runCount = 10
+    @inline(__always) public static func measureBlock(executionCount: UInt = 10, closure: () -> Void) -> CFTimeInterval {
         var executionTimes: Double = 0
-        for _ in 0..<runCount {
+        for _ in 0..<executionCount {
             let startTime = CACurrentMediaTime()
             closure()
             let endTime = CACurrentMediaTime()
             executionTimes += (endTime - startTime)
         }
-        return executionTimes / Double(runCount)
+        return executionTimes / Double(executionCount)
     }
 }
 

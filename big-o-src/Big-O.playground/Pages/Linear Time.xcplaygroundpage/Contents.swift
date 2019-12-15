@@ -26,7 +26,8 @@ _ = BenchTimer.measureBlock {
 print("\nAverage execution time for array sum using a loop")
 print("---------------------------------------------------")
 
-let arraySizes = [10, 100, 1000, 10000]
+//let arraySizes = [10, 100, 1000, 10000]
+let arraySizes = [100, 10000, 100000]
 
 // generate arrays and measure method call
 for size in arraySizes {
@@ -40,7 +41,7 @@ for size in arraySizes {
 }
 // Using reduce()
 print("\nAverage execution time for array sum using reduce()")
-print("-----------------------------------------------------")
+print("---------------------------------------------------")
 
 for size in arraySizes {
     let array = Array.generateRandom(size: size)
@@ -55,7 +56,7 @@ for size in arraySizes {
 }
 //: Count odd/even - O(n)
 print("\nAverage execution time for counting the number of odd and even elements in a list")
-print("-----------------------------------------------------------------------------------")
+print("---------------------------------------------------------------------------------")
 
 for size in arraySizes {
     let array = Array.generateRandom(size: size)
