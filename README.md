@@ -1,7 +1,7 @@
 # Introduction to Algorithms and Data Structures in Swift 5
 ## Source Code
 
-Get the course on Udemy **[CLICK HERE TO GET 90% OFF](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
+The course is avilable on Udemy. **[CLICK HERE TO GET the course at a friendly price](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
 OR use this link: https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE
 
 The book version is available **[on iTunes](http://itunes.apple.com/us/book/id1345964250)** and **[Amazon](https://www.amazon.com/Introduction-Algorithms-Data-Structures-Swift-ebook/dp/B077D8MQ31)**
