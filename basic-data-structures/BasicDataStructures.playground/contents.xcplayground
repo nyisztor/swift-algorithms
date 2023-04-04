@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Tuple'/>
+        <page name='MinMax'/>
+        <page name='Queue'/>
+        <page name='PrinterQueue'/>
+        <page name='Deque-final'/>
+        <page name='Deque'/>
+        <page name='MaxSlidingWindow-FirstTry'/>
+        <page name='MaxSlidingWindowUsingDeque'/>
+    </pages>
+</playground>
