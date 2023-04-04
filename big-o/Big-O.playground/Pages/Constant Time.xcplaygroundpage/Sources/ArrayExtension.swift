@@ -1,7 +1,7 @@
 import Foundation
 
 public extension Array where Element == Int {
-    // Checks whether the first element of the array is zero
+    // Checks if the first element in an array of integers is 0
     func startsWithZero() -> Bool {
         guard self.isEmpty == false else {
             return false
