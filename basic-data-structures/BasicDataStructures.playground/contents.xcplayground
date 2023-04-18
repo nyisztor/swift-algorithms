@@ -5,9 +5,10 @@
         <page name='MinMax'/>
         <page name='Queue'/>
         <page name='PrinterQueue'/>
-        <page name='Deque-final'/>
         <page name='Deque'/>
         <page name='MaxSlidingWindow-FirstTry'/>
         <page name='MaxSlidingWindowUsingDeque'/>
+        <page name='Stack'/>
+        <page name='BalancingParentheses'/>
     </pages>
 </playground>
