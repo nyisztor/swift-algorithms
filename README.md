@@ -1,8 +1,8 @@
 # Introduction to Algorithms and Data Structures in Swift 5
 ## Source Code
 
-The course is avilable on Udemy. **[CLICK HERE TO GET the course at a friendly price](https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE)**
-OR use this link: https://www.udemy.com/introduction-to-algorithms-in-swift/?couponCode=BESTPRICE
+The course is available on Udemy. **[CLICK HERE TO GET the course at a friendly price](https://www.udemy.com/course/introduction-to-algorithms-in-swift/?referralCode=B4C0C713F3E9132FE38A)**
+OR use this link: https://www.udemy.com/course/introduction-to-algorithms-in-swift/?referralCode=B4C0C713F3E9132FE38A
 
 ![alt text](https://leakka.com/wp-content/uploads/2022/12/algo-1.png)
 
